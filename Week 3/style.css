@@ -332,8 +332,26 @@ h1, h2, h3 {
   font-size: 0.88rem;
 }
 
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
 .site-footer strong {
   color: #fff;
+}
+
+.site-footer a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible {
+  color: #ffc233;
 }
 
 /* ---------- Jurusan page ---------- */
@@ -561,6 +579,10 @@ h1, h2, h3 {
   .site-footer .container {
     flex-direction: column;
     text-align: center;
+  }
+
+  .footer-info {
+    align-items: center;
   }
 }
 
